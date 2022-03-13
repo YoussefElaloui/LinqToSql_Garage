@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="garage">
+  <DataContextMoniker Name="/garageDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2601d719-9207-4af5-93dd-a02a323dff7a" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/garageDataContext/garage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ebf0d336-1a76-41f0-90b9-c53ad3eea6fa" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="22ce7009-fe5b-4e8b-823b-8ba996d83794" absoluteBounds="3.5, 4.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/garageDataContext/piece" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6b306a6-9336-46a6-bc02-462eaec3bf7a" absoluteBounds="3.515, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf8900a3-4ac2-46bd-9dd6-10b89f0a0238" absoluteBounds="3.5, 0.875, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/garageDataContext/reparation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29162968-9f92-4537-b35d-bc49e68a9ff1" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f1b3a327-e91c-4a76-9f5a-8af544b7381b" absoluteBounds="6.25, 1.125, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/garageDataContext/utilise" />
+      <nestedChildShapes>
+        <elementListCompartment Id="949c67d0-aec5-444f-b53f-a252679ebc57" absoluteBounds="6.265, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="96ef893d-7934-48e5-9f08-319b8a337667" absoluteBounds="0.75, 4, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/garageDataContext/voiture" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd3c535c-3f27-46f8-8ee1-577f8b26a828" absoluteBounds="0.765, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.04166666666667 : 1.84699625651042 : JumpStart); (3.20833333333333 : 1.84699625651042 : JumpEnd); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/garageDataContext/garage/garage_reparation" />
+      <nodes>
+        <classShapeMoniker Id="2601d719-9207-4af5-93dd-a02a323dff7a" />
+        <classShapeMoniker Id="cf8900a3-4ac2-46bd-9dd6-10b89f0a0238" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.81814697265625); (7.25 : 4.81814697265625); (7.25 : 2.5112939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/garageDataContext/piece/piece_utilise" />
+      <nodes>
+        <classShapeMoniker Id="22ce7009-fe5b-4e8b-823b-8ba996d83794" />
+        <classShapeMoniker Id="f1b3a327-e91c-4a76-9f5a-8af544b7381b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.81814697265625); (6.25 : 1.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/garageDataContext/reparation/reparation_utilise" />
+      <nodes>
+        <classShapeMoniker Id="cf8900a3-4ac2-46bd-9dd6-10b89f0a0238" />
+        <classShapeMoniker Id="f1b3a327-e91c-4a76-9f5a-8af544b7381b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.00121330413662); (3.125 : 3.62621330413662); (3.125 : 1.32974612825521); (3.5 : 1.32974612825521)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/garageDataContext/voiture/voiture_reparation" />
+      <nodes>
+        <classShapeMoniker Id="96ef893d-7934-48e5-9f08-319b8a337667" />
+        <classShapeMoniker Id="cf8900a3-4ac2-46bd-9dd6-10b89f0a0238" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
